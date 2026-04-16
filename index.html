@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Enigmail: Private Email, Built Deliberately</title>
+
+<style>
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:
+        radial-gradient(circle at 20% 30%, rgba(255,255,255,0.08), transparent 40%),
+        radial-gradient(circle at 80% 70%, rgba(255,255,255,0.05), transparent 40%),
+        linear-gradient(135deg, #0f172a, #020617);
+    color: #e5e7eb;
+    text-align: center;
+}
+
+.container {
+    max-width: 760px;
+    padding: 2rem;
+}
+
+h1 {
+    font-size: clamp(2.5rem, 6vw, 4rem);
+    margin-bottom: 1rem;
+}
+
+.tagline {
+    font-size: clamp(1.1rem, 2vw, 1.4rem);
+    opacity: 0.85;
+    margin-bottom: 2rem;
+}
+
+.divider {
+    width: 80px;
+    height: 4px;
+    background: #e5e7eb;
+    margin: 1.5rem auto;
+    opacity: 0.5;
+}
+
+p {
+    font-size: 1rem;
+    opacity: 0.75;
+    line-height: 1.5;
+}
+
+.small {
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    opacity: 0.6;
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+    <h1>Private Email,<br>Built Deliberately</h1>
+
+    <div class="tagline">
+        One service, many identities, clear attribution.
+    </div>
+
+    <div class="divider"></div>
+
+    <p align="left">
+        Recent years have seen a steady stream of large-scale data breaches and credential leaks affecting major platforms, often exposing email addresses alongside names, phone numbers, and other identifiers. Once an address appears in breach datasets, it is frequently reused across phishing campaigns, spam networks, and credential-stuffing attacks, meaning exposure tends to persist and propagate rather than remain isolated. In practice, a primary email address becomes a long-lived identifier that is difficult to "contain" once leaked.
+    </p>
+    <p align="left">
+        Email aliasing changes this model by introducing <strong>compartmentalization</strong>. Instead of a single address used everywhere, each service receives a distinct alias, making it possible to trace which organization or signup was the source of a leak. When abuse begins on a specific alias, it can be revoked or rotated without disrupting the rest of the user's identity surface. This reduces correlation across services and turns inevitable leaks into attributable, reversible events rather than global exposure.
+    </p>
+
+    <div class="divider"></div>
+
+    <p align="left">
+        We are in a limited early phase while core systems are being validated. Broader access may open in the future once stability, security, and operational guarantees meet our standards.
+    </p>
+
+    <div class="small">
+        Status: Active development
+    </div>
+</div>
+</body>
+</html>
